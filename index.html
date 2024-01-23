@@ -1,127 +1,38 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SCOL'AIR✈ - Réservation de vols</title>
-    <link  rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Preview</title>
+  <style>
+    #image {
+      width: 300px;
+      height: 200px;
+      background-size: cover;
+      text-align: center;
+      color: white;
+      padding: 20px;
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1><span class="scol">SCOL'</span><span class="air">AIR✈</span> - Réservation de vols</h1>
-    
-    
-    <div class="reservation-space">
-        <h2>Réserver dès maintenant et profitez des meilleures offres exclusives, pour une expérience unique et personnalisée.</h2>
-        
-        <div class="container">
-          <header>
-              <nav>
-                  <div class="logo">
-                    
-                  </div>
-                  <ul>
-                      <li><a href="#">Accueil</a></li>
-                      <li><a href="#">Réserver un vol</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">À propos</a></li>
-                      <li><a href="#">Contact</a></li><br><br>
-                  </ul>
-              </nav>
-          </header>
-  
-          <section class="hero">
-              <h1>Réservez votre vol avec SCOL AIR</h1>
-              <h2>Profitez des meilleures offres pour vos voyages</h2>
-          </section>
-  
-          <section class="reservation">
-              <div class="reservation-form">
-                  <h3>Réservation de vol</h3>
-                  <form>
-                      <label for="destination">Destination:</label>
-                      <select id="destination" name="destination">
-                       
-                          <option value="londres">Londres</option>
-                          <option value="rome">Rome</option>
-                          <option value="paris">Paris</option>
-                          <option value="berlin">Berlin</option>
-                          <option value="hambourg">Hambourg</option>
-                          <option value="bruxels">Bruxelles</option>
-                          <option value="geneve">Genève</option>
-                          <option value="graz">Graz</option>
-                          <option value="grece">Grèce</option>
-                      </select>
-                      
-                      <label for="date">Date:</label>
-                      <input type="date" id="date" name="date" required>
-                      
-                      <label for="price">Prix:</label>
-                      <input type="number" id="price" name="price" min="0" required>
-                      <label for="trip-type">Type de voyage:</label>
-                      <select id="trip-type" name="trip-type">
-                          <option value="one-way">Aller simple</option>
-                          <option value="round-trip">Aller-retour</option>
-                      </select>
-                      
-                      <input type="submit" value="Réserver">
-                  </form>
-              </div>
-          </section>
-  
-          <section class="cities">
-              <h2>Nos destinations populaires</h2>
-              
-              <div class="city">
-                  <img src="londres.jpg" alt="Londres">
-                  <h3>Londres</h3>
-                  <p>La capitale du Royaume-Uni, avec des sites emblématiques tels que le Tower Bridge et le Buckingham Palace.</p>
-              </div>
-              <div class="city">
-                  <img src="rome.jpg" alt="Rome">
-                  <h3>Rome</h3>
-                  <p>La ville éternelle en Italie, connue pour ses monuments historiques tels que le Colisée et la fontaine de Trevi.</p>
-              </div>
-              <div class="city">
-                  <img src="paris.jpg" alt="Paris">
-                  <h3>Paris</h3>
-                  <p>La capitale de la France, célèbre pour la tour Eiffel, le Louvre et la cuisine raffinée.</p>
-              </div>
-              <div class="city">
-                  <img src="berlin.jpg" alt="Berlin">
-                  <h3>Berlin</h3>
-                  <p>La capitale de l'Allemagne, riche en histoire, avec des attractions telles que le mur de Berlin et la porte de Brandebourg.</p>
-              </div>
-              <div class="city">
-                  <img src="hambourg.jpg" alt="Hambourg">
-                  <h3>Hambourg</h3>
-                  <p>Une ville portuaire animée en Allemagne, connue pour son architecture impressionnante et son atmosphère dynamique.</p>
-              </div>
-              <div class="city">
-                  <img src="bruxelles.jpg" alt="Bruxelles">
-                  <h3>Bruxelles</h3>
-                  <p>La capitale de la Belgique, réputée pour ses chocolats, ses gaufres et son architecture médiévale.</p>
-              </div>
-              <div class="city">
-                  <img src="geneve.jpg" alt="Genève">
-                  <h3>Genève</h3>
-                  <p>Une ville suisse située au bord du lac Léman, célèbre pour son horloge fleurie et son jet d'eau emblématique.</p>
-              </div>
-              <div class="city">
-                  <img src="graz.jpg" alt="Graz">
-                  <h3>Graz</h3>
-                  <p>Une charmante ville autrichienne avec une architecture baroque et une atmosphère artistique.</p>
-              </div>
-              <div class="city">
-                  <img src="grece.jpg" alt="Grèce">
-                  <h3>Grèce</h3>
-                  <p>Un pays méditerranéen magnifique, célèbre pour ses îles pittoresques, son histoire antique et sa cuisine délicieuse.</p>
-              </div>
-          </section>
-  
-          <footer>
-              <p>&copy; 2023 SCOL AIR. Tous droits réservés.</p>
-          </footer>
-      </div>
-  
-  </body>
-  </html>
+
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <img src="path/to/image1.jpg" alt="Image 1" onmouseover="upDate(this)" onmouseout="unDo()">
+  <img src="path/to/image2.jpg" alt="Image 2" onmouseover="upDate(this)" onmouseout="unDo()">
+  <img src="path/to/image3.jpg" alt="Image 3" onmouseover="upDate(this)" onmouseout="unDo()">
+
+  <script>
+    // Place the JavaScript code here
+    function upDate(previewPic) {
+      document.getElementById('image').innerHTML = previewPic.alt;
+      document.getElementById('image').style.backgroundImage = 'url(' + previewPic.src + ')';
+    }
+
+    function unDo() {
+      document.getElementById('image').innerHTML = "Hover over an image below to display here.";
+      document.getElementById('image').style.backgroundImage = "url(''
