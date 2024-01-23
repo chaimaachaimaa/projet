@@ -5,33 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Votre Titre</title>
+    <script defer src="script.js"></script>
+    <title>Image Preview</title>
 </head>
 <body>
-    <header>
-        <h1>Votre En-tête</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section class="grid">
-            <!-- Placez vos images ici -->
-            <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
-            <img src="image3.jpg" alt="Image 3">
-            <img src="image4.jpg" alt="Image 4">
-            <img src="image5.jpg" alt="Image 5">
-        </section>
-    </main>
+<div id="image" class="preview" style="background-image: url('default-image.jpg')">
+    <span id="text">Hover over an image below to display here</span>
+</div>
 
-    <footer>
-        <p>Votre Pied de page</p>
-    </footer>
+<div class="image-list">
+    <img src="image1.jpg" alt="Image 1" onclick="upDate(this)">
+    <img src="image2.jpg" alt="Image 2" onclick="upDate(this)">
+    <img src="image3.jpg" alt="Image 3" onclick="upDate(this)">
+</div>
+
+<script defer src="script.js"></script>
 </body>
 </html>
