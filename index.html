@@ -1,71 +1,127 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colors</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>SCOL'AIR✈ - Réservation de vols</title>
+    <link  rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1 id="top">Colors!</h1>
-  </header>
-
-  <main>
-    <h2>Basic Media Queries</h2>
-    <p>In this assignment you will add two media queries to the css file.</p>
-    <ul>
-      <li>The first media query should trigger at 772px and change the layout of the divs to be 45% of the viewport width. The images should have a maximum height of 30% of the viewport height.</li>
-
-      <li>The second media query should trigger at 998px and change the layout of the divs to be 30% of the viewport width.</li>
-    </ul>
-    <p>You will need to make additional changes to ensure that the divs appear next to each other and that the images are contained within the divs.  Some of these properties include display, width and max-height.</p>
-
-    <div>
-      <img src="images/Red.jpeg" alt="Red" width="200">
-      <p class = "label">Red</p>
-    </div>
-    <div>
-      <img src="images/Orange.png" alt="Orange" width="200">
-      <p class = "label">Orange</p>
-    </div>
-    <div>
-      <img src="images/Yellow.png" alt="Yellow" width="200">
-      <p class = "label">Yellow</p>
-    </div>
-    <div>
-      <img src="images/Green.png" alt="Green" width="200">
-      <p class = "label">Green</p>
-    </div>
-    <div>
-      <img src="images/Blue.png" alt="Blue" width="200">
-      <p class = "label">Blue</p>
-    </div>
-    <div>
-      <img src="images/Indigo.jpeg" alt="Indigo" width="200">
-      <p class = "label">Indigo</p>
-    </div>
-    <div>
-      <img src="images/Purple.png" alt="Purple" width="200">
-      <p class = "label">Purple</p>
-    </div>
-    <div>
-      <img src="images/Pink.jpeg" alt="Pink" width="200">
-      <p class = "label">Pink</p>
-    </div>
-    <div>
-      <img src="images/White.png" alt="White" width="200">
-      <p class = "label">White</p>
-    </div>
-    </div>
-  </main>
-
-  <footer>
-    <a href="#top">Jump to the Top</a>
-  </footer>
-</body>
-
-</html>
+    <h1><span class="scol">SCOL'</span><span class="air">AIR✈</span> - Réservation de vols</h1>
+    
+    
+    <div class="reservation-space">
+        <h2>Réserver dès maintenant et profitez des meilleures offres exclusives, pour une expérience unique et personnalisée.</h2>
+        
+        <div class="container">
+          <header>
+              <nav>
+                  <div class="logo">
+                    
+                  </div>
+                  <ul>
+                      <li><a href="#">Accueil</a></li>
+                      <li><a href="#">Réserver un vol</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">À propos</a></li>
+                      <li><a href="#">Contact</a></li><br><br>
+                  </ul>
+              </nav>
+          </header>
+  
+          <section class="hero">
+              <h1>Réservez votre vol avec SCOL AIR</h1>
+              <h2>Profitez des meilleures offres pour vos voyages</h2>
+          </section>
+  
+          <section class="reservation">
+              <div class="reservation-form">
+                  <h3>Réservation de vol</h3>
+                  <form>
+                      <label for="destination">Destination:</label>
+                      <select id="destination" name="destination">
+                       
+                          <option value="londres">Londres</option>
+                          <option value="rome">Rome</option>
+                          <option value="paris">Paris</option>
+                          <option value="berlin">Berlin</option>
+                          <option value="hambourg">Hambourg</option>
+                          <option value="bruxels">Bruxelles</option>
+                          <option value="geneve">Genève</option>
+                          <option value="graz">Graz</option>
+                          <option value="grece">Grèce</option>
+                      </select>
+                      
+                      <label for="date">Date:</label>
+                      <input type="date" id="date" name="date" required>
+                      
+                      <label for="price">Prix:</label>
+                      <input type="number" id="price" name="price" min="0" required>
+                      <label for="trip-type">Type de voyage:</label>
+                      <select id="trip-type" name="trip-type">
+                          <option value="one-way">Aller simple</option>
+                          <option value="round-trip">Aller-retour</option>
+                      </select>
+                      
+                      <input type="submit" value="Réserver">
+                  </form>
+              </div>
+          </section>
+  
+          <section class="cities">
+              <h2>Nos destinations populaires</h2>
+              
+              <div class="city">
+                  <img src="londres.jpg" alt="Londres">
+                  <h3>Londres</h3>
+                  <p>La capitale du Royaume-Uni, avec des sites emblématiques tels que le Tower Bridge et le Buckingham Palace.</p>
+              </div>
+              <div class="city">
+                  <img src="rome.jpg" alt="Rome">
+                  <h3>Rome</h3>
+                  <p>La ville éternelle en Italie, connue pour ses monuments historiques tels que le Colisée et la fontaine de Trevi.</p>
+              </div>
+              <div class="city">
+                  <img src="paris.jpg" alt="Paris">
+                  <h3>Paris</h3>
+                  <p>La capitale de la France, célèbre pour la tour Eiffel, le Louvre et la cuisine raffinée.</p>
+              </div>
+              <div class="city">
+                  <img src="berlin.jpg" alt="Berlin">
+                  <h3>Berlin</h3>
+                  <p>La capitale de l'Allemagne, riche en histoire, avec des attractions telles que le mur de Berlin et la porte de Brandebourg.</p>
+              </div>
+              <div class="city">
+                  <img src="hambourg.jpg" alt="Hambourg">
+                  <h3>Hambourg</h3>
+                  <p>Une ville portuaire animée en Allemagne, connue pour son architecture impressionnante et son atmosphère dynamique.</p>
+              </div>
+              <div class="city">
+                  <img src="bruxelles.jpg" alt="Bruxelles">
+                  <h3>Bruxelles</h3>
+                  <p>La capitale de la Belgique, réputée pour ses chocolats, ses gaufres et son architecture médiévale.</p>
+              </div>
+              <div class="city">
+                  <img src="geneve.jpg" alt="Genève">
+                  <h3>Genève</h3>
+                  <p>Une ville suisse située au bord du lac Léman, célèbre pour son horloge fleurie et son jet d'eau emblématique.</p>
+              </div>
+              <div class="city">
+                  <img src="graz.jpg" alt="Graz">
+                  <h3>Graz</h3>
+                  <p>Une charmante ville autrichienne avec une architecture baroque et une atmosphère artistique.</p>
+              </div>
+              <div class="city">
+                  <img src="grece.jpg" alt="Grèce">
+                  <h3>Grèce</h3>
+                  <p>Un pays méditerranéen magnifique, célèbre pour ses îles pittoresques, son histoire antique et sa cuisine délicieuse.</p>
+              </div>
+          </section>
+  
+          <footer>
+              <p>&copy; 2023 SCOL AIR. Tous droits réservés.</p>
+          </footer>
+      </div>
+  
+  </body>
+  </html>
