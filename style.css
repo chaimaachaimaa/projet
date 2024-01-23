@@ -11,3 +11,4 @@ function unDo() {
   // Reset the background image of the image div
   document.getElementById('image').style.backgroundImage = "url('')";
 }
+  
