@@ -1,15 +1,15 @@
-function upDate(previewPic) {
-    var imageDiv = document.getElementById("image");
-    imageDiv.style.backgroundImage = "url('" + previewPic.src + "')";
-    imageDiv.style.backgroundSize = "cover";
-    imageDiv.style.backgroundPosition = "center";
-    document.getElementById("text").innerHTML = previewPic.alt;
-}
+function initGallery() {
+    var gallery = document.getElementById("gallery");
+    var images = gallery.getElementsByTagName("img");
 
-function unDo() {
-    var imageDiv = document.getElementById("image");
-    imageDiv.style.backgroundImage = "url('default-image.jpg')";
-    imageDiv.style.backgroundSize = "cover";
-    imageDiv.style.backgroundPosition = "center";
-    document.getElementById("text").innerHTML = "Hover over an image below to display here";
+    for (var i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", i + 1);
+        images[i].addEventListener("focus", function() {
+            this.style.border = "2px solid #4CAF50";
+        });
+
+        images[i].addEventListener("blur", function() {
+            this.style.border = "none";
+        });
+    }
 }
